@@ -27,9 +27,9 @@ void postOrder(Node *T){//后序遍历
 }
 
 void inOrder(Node *T){//中序遍历
-    if(T->lchild) postOrder(T->lchild);
+    if(T->lchild) inOrder(T->lchild);
     str[(*size)++] = T->c + '0';
-    if(T->rchild) postOrder(T->rchild);
+    if(T->rchild) inOrder(T->rchild);
 }
 
 Node *Insert(Node *T,int x){//将数字插入二叉树
