@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
 struct Node{//树节点结构体
     Node *lchild;
     Node *rchild;
@@ -14,7 +15,7 @@ Node *create(){//申请结点空间
     return &Tree[loc++];
 }
 
-char str1[25],str2[25];//保存二叉排序树的遍历结果，将每一棵树的前序遍历得到的字符串与中序遍历得到的字符串连接，得到便利结果字符串
+char str1[25],str2[25];//保存二叉排序树的遍历结果，将每一棵树的前序遍历得到的字符串与中序遍历得到的字符串连接，得到遍历结果字符串
 int size1,size2;//保存在字符数组中的遍历得到字符个数
 char *str;//当前正在保存字符串
 int *size;//当前正在保存字符串中字符个数
